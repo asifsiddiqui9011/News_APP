@@ -1,0 +1,9 @@
+.footer-container{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(213, 208, 208);
+    color: black;
+    position:static;
+    bottom: 0px;
+    text-align: center;
+}

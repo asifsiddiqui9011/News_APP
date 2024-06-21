@@ -1,0 +1,22 @@
+.cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.banners{
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(171, 126, 212);
+    color: aliceblue;
+    
+  }
+  .banner-img{
+    height:350px;
+    width: 100%;
+    object-fit: cover;
+  }

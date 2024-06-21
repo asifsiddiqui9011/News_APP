@@ -1,0 +1,40 @@
+.category-container{
+    height: 50px;
+    width: 100%;
+    color: azure;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: -25px;
+}
+
+.Cbtn-container{
+    /* width: 70px; */
+    border-radius: 8px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.cbtn{
+    width: 100px;
+    background-color: white;
+    color: rgb(199, 138, 255);
+    border-radius: 8px;
+    text-decoration: none;
+    text-overflow: clip;
+    padding: 8px;
+    text-align: center;
+}
+
+.cbtn p {
+    margin: 0px;
+}
+
+#hrbottom {
+    height: 8px;
+    width: 100px;
+    font-size: 2px;
+    border-radius: 50px;
+    background-color: white
+}

@@ -1,0 +1,42 @@
+.Cards{
+    height: 380px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid rgb(204, 198, 198);
+    color: black;
+    text-align:justify;
+    overflow: hidden;
+}
+
+.card-img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: antiquewhite;
+}
+
+.wishlist-icon{
+    width: inherit;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    position: absolute;
+    font-size:25px;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: white;
+}
+
+.Cards h3,p {
+  margin: 0px 10px 10px 10px;
+}
+
+.card-description{
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 100px; */
+    /* height: 100px; */
+
+}
