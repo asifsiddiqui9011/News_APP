@@ -1,8 +1,8 @@
 .Navbar-container{
    height: 70px;
-   width: 100%;
-   background-color: azure;
-   color: black;
+   min-width: 100vw;
+   background-color: #e63946;
+   color: white;
    position: fixed;
    top: 0px;
    border-bottom:1px solid black;
@@ -21,6 +21,7 @@
 }
 
 .navbar-wishlist{
+   margin: 5px;
    font-size: 30px;
 
 }

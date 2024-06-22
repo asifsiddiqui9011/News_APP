@@ -1,9 +1,11 @@
 .footer-container{
     height: 60px;
-    width: 100%;
+    min-width: 100vw;
     background-color: rgb(213, 208, 208);
     color: black;
     position:static;
     bottom: 0px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }

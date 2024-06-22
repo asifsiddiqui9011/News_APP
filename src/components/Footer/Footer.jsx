@@ -1,9 +1,12 @@
 import './Footer.css'
+import { FaRegCopyright } from "react-icons/fa";
 
+
+//this is the footer component 
 const Footer = () => {
   return (
     <div className='footer-container'>
-      <p>Alll rights are reserved</p>
+      <p> <FaRegCopyright /> All rights are reserved!..</p>
     </div>
   )
 }
