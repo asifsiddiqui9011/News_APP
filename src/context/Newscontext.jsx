@@ -12,7 +12,7 @@ const NewsContextProvider = (props) => {
 
 
     useEffect(()=>{
-        let url=`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=510b2590dbf24cca91c83b49cb361ea8`;//here we pasted url of NewsApi to fetch the Articles data from api by making  fetch api call
+        let url=`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;//here we pasted url of NewsApi to fetch the Articles data from api by making  fetch api call
         fetch(url)
       //here handling the error responses
       .then((response) => {
