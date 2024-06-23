@@ -13,7 +13,7 @@ function App() {
       
       <Routes>{/*here we have settted particular eligible Route of every component to be rendered and wraped the every Route into the Routes  */}
          <Route
-          path={"/general"}
+          path={"/"}
           element={<Home />}
         />
         <Route

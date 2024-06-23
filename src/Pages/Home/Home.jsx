@@ -26,8 +26,6 @@ const Home = () => {
     Banner()
   })
 
-  
-  
 
   return (
     <div className="home-container">
@@ -40,35 +38,9 @@ const Home = () => {
       {/*here we have set the condition if articles are not null then it will map all the articles on to the screen otherwise it will show thow the message */}
       {articles?
       articles.map((article,index)=>{
-        return ( <Card key={index} title={article.title} img={article.urlToImage} description={article.description} url={article.url}/>)
+        return ( <Card key={index} title={article.title} img={article.image} description={article.description} url={article.url}/>)
       })
       :<h1>Something went wrong please try again after sometime!!!</h1>}
-
-      
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
-<Card/>
     </div>
     </div>
   )

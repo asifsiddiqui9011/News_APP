@@ -12,9 +12,14 @@ const NewsContextProvider = (props) => {
 
 
     useEffect(()=>{
-        let url=`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;//here we pasted url of NewsApi to fetch the Articles data from api by making  fetch api call
-        fetch(url)
-      //here handling the error responses
+        let url=`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
+        //here we pasted url of NewsApi to fetch the Articles data from api by making  fetch api call
+        let apikey = '9da2a85d05f7b45cd8a85b38ae79eed8'
+        let url1 = 'https://gnews.io/api/v4/top-headlines?category=' + category + '&lang=en&country=us&max=10&apikey=' + apikey;
+
+
+        fetch(url1)
+                      //here handling the error responses
       .then((response) => {
         if (!response.ok) {
           if (response.status === 401) {

@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="Navbar-container">
       <h1>NewsApp</h1>
       <div className="navbar-tags">
-        <Link to={'/general'} style={{textDecoration:"none",color:"white"}}><p >Home</p></Link>{/* this is the home tag linked to retun on home page general category of article */}
+        <Link to={'/'} style={{textDecoration:"none",color:"white"}}><p >Home</p></Link>{/* this is the home tag linked to retun on home page general category of article */}
         <p onClick={()=>{window.scrollTo({top:0,behaviour:"smooth"})}}>Category</p>{/*here pon clicking the category screen window will move to top at the article category buttons selection */}
       </div>
       <div className="navbar-wishlist">

@@ -19,7 +19,7 @@ const Category = () => {
   return (
     <div className="category-container">
 
-      <Link to="/general"  style={{textDecoration:"none"}}>{/*here Link is used to navigate to the particular selected catorgy page just like here general category is selected  */}
+      <Link to="/"  style={{textDecoration:"none"}}>{/*here Link is used to navigate to the particular selected catorgy page just like here general category is selected  */}
         <div onClick={ () => {setCategory("general")}}>
           <div className="Cbtn-container">
             <button className="cbtn" ref={buttonRef} >General</button>{/*here ref function is used to show focus into this button after refereshing the page  */}
