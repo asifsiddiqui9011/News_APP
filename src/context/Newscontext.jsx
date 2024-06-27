@@ -9,6 +9,7 @@ const NewsContextProvider = (props) => {
 
     const [articles,setArticles] = useState([])
     const[category,setCategory] = useState('general')
+    const [banner,setBanner] = useState(general)
 
 
     useEffect(()=>{
@@ -52,7 +53,7 @@ const NewsContextProvider = (props) => {
     }
 
 
-const contextValue = {articles,category,setCategory,addToFavlist,favlist,Clearfavlist};//here we have passed all the function and state to be updated and used into the app by call them in each component where  ever callable using useContex hook and NewsContext function
+const contextValue = {banner,setBanner,articles,category,setCategory,addToFavlist,favlist,Clearfavlist};//here we have passed all the function and state to be updated and used into the app by call them in each component where  ever callable using useContex hook and NewsContext function
     
     return (
         <NewsContext.Provider value={contextValue}>

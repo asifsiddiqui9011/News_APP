@@ -12,19 +12,8 @@ import { NewsContext} from "../../context/Newscontext"
 import { RiH3 } from "react-icons/ri"
 
 const Home = () => {
-  const {articles,category}= useContext(NewsContext) 
-  const [banner,setBanner] = useState(general)
-
-
-  //here we are updating banner state to change the banner according to the category of the articles
-  const Banner=()=>{
-   setBanner(eval(category))
-  }
-
-  //here we are calling the Banner function into useEffect hook to be called when updation of category occured
-  useEffect(()=>{
-    Banner()
-  })
+  const {articles,category,banner}= useContext(NewsContext) 
+  
 
 
   return (
