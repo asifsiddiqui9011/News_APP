@@ -1,5 +1,11 @@
 import { createContext, useEffect } from "react";
 import { useState } from "react";
+import general from "../assets/general.png"
+import health from "../assets/health.jpg"
+import business from "../assets/business.jpg"
+import entertainment from "../assets/entertainment.jpg"
+import technology from "../assets/technology.jpg"
+import sports from  "../assets/sports.png"
 
 //here we created NewsContext using createContex  Hook initiating with null value
 export const NewsContext = createContext(null);
