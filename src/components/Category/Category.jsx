@@ -2,27 +2,39 @@ import { useEffect, useState, useRef, useContext} from "react"
 import { Link } from "react-router-dom"
 import "./Category.css"
 import { NewsContext } from "../../context/Newscontext"
-
+import general from "../../assets/general.png"
+import business from "../../assets/business.jpg"
+import health from "../../assets/health.jpg"
+import technology from "../../assets/technology.jpg"
+import entertainment from "../../assets/entertainment.jpg"
+import sports from "../../assets/sports.png"
 
 const Category = () => {
  
   //here we are calling category or set category state from NewsContex using useContex to update the seleted category,such as Business, technology etc..
-  const {category,setCategory,setBanner}=useContext(NewsContext)
+  const {category,setCategory}=useContext(NewsContext)
+  const [banner,setBanner] = useState(general)
 
-
+//here we are calling a function to change the banner as per the category changes
   const changeBanner=(event)=>{
     setBanner(event)
+    console.log(banner,"banner changing")
   }
+
  
  //setting focus for general button during Loading and refreshing page
   const buttonRef = useRef(null);
   useEffect(() => {
-    changeBanner()
+   
     buttonRef.current.focus();
   }, []);
 
  
   return (
+    <>
+    <div className='banners'>
+       <img className="banner-img" src={banner} alt="" />
+    </div>
     <div className="category-container">
 
       <Link to="/"  style={{textDecoration:"none"}}>{/*here Link is used to navigate to the particular selected catorgy page just like here general category is selected  */}
@@ -74,6 +86,7 @@ const Category = () => {
         </div>
       </Link>  
     </div>
+    </>
   )
 }
 

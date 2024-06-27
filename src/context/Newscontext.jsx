@@ -1,11 +1,5 @@
 import { createContext, useEffect } from "react";
 import { useState } from "react";
-import general from "../assets/general.png"
-import health from "../assets/health.jpg"
-import business from "../assets/business.jpg"
-import entertainment from "../assets/entertainment.jpg"
-import technology from "../assets/technology.jpg"
-import sports from  "../assets/sports.png"
 
 //here we created NewsContext using createContex  Hook initiating with null value
 export const NewsContext = createContext(null);
@@ -15,8 +9,7 @@ const NewsContextProvider = (props) => {
 
     const [articles,setArticles] = useState([])
     const[category,setCategory] = useState('general')
-    const [banner,setBanner] = useState(general)
-
+    
 
     useEffect(()=>{
         let url=`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
@@ -59,7 +52,7 @@ const NewsContextProvider = (props) => {
     }
 
 
-const contextValue = {banner,setBanner,articles,category,setCategory,addToFavlist,favlist,Clearfavlist};//here we have passed all the function and state to be updated and used into the app by call them in each component where  ever callable using useContex hook and NewsContext function
+const contextValue = {articles,category,setCategory,addToFavlist,favlist,Clearfavlist};//here we have passed all the function and state to be updated and used into the app by call them in each component where  ever callable using useContex hook and NewsContext function
     
     return (
         <NewsContext.Provider value={contextValue}>
